@@ -1,0 +1,18 @@
+{
+  "privacy": {
+    "telemetry": false
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash(rm -rf *)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Dangerous recursive delete blocked.' && exit 1"
+          }
+        ]
+      }
+    ]
+  }
+}

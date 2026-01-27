@@ -1,0 +1,51 @@
+{
+  "description": "consulting-ai-news プロジェクトのサブエージェント構成",
+  "agents": [
+    {
+      "id": "analyst",
+      "role": "Analyst",
+      "subagent_type": "Explore",
+      "responsibilities": ["コードベース調査", "現状分析", "課題抽出"],
+      "when_to_use": "コードの理解が必要なとき、既存実装の調査時"
+    },
+    {
+      "id": "planner",
+      "role": "Planner",
+      "subagent_type": "Plan",
+      "responsibilities": ["実装計画策定", "タスク分解", "アーキテクチャ設計"],
+      "when_to_use": "複雑なタスクの計画時、実装戦略の検討時"
+    },
+    {
+      "id": "frontend-impl",
+      "role": "Frontend Implementer",
+      "subagent_type": "general-purpose",
+      "responsibilities": ["HTML/CSS実装", "JavaScript実装", "レスポンシブ対応"],
+      "when_to_use": "フロントエンド実装時"
+    },
+    {
+      "id": "data-handler",
+      "role": "Data Handler",
+      "subagent_type": "general-purpose",
+      "responsibilities": ["データ取得", "JSON処理", "API連携"],
+      "when_to_use": "ニュースデータの取得・処理時"
+    },
+    {
+      "id": "reviewer",
+      "role": "Reviewer",
+      "subagent_type": "general-purpose",
+      "responsibilities": ["コードレビュー", "品質チェック", "パフォーマンス確認"],
+      "when_to_use": "実装完了後のレビュー、デプロイ前"
+    }
+  ],
+  "parallel_execution_rules": {
+    "always_parallel": [
+      "HTML/CSS/JSの同時作成",
+      "複数コンポーネントの実装",
+      "複数ニュースソースの調査"
+    ],
+    "sequential": [
+      "HTMLが必要なCSS/JSの実装",
+      "データ構造定義後のデータ取得実装"
+    ]
+  }
+}

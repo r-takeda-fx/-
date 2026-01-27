@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News Digest - コンサル & AI</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1 class="header__title">Daily News Digest</h1>
+            <p class="header__subtitle">コンサル業界 & AI 最新情報</p>
+        </header>
+
+        <!-- タブナビゲーション -->
+        <nav class="tabs" role="tablist">
+            <button class="tabs__button active" data-tab="consulting" role="tab" aria-selected="true">
+                コンサル業界
+            </button>
+            <button class="tabs__button" data-tab="ai" role="tab" aria-selected="false">
+                AI
+            </button>
+        </nav>
+
+        <!-- タブコンテンツ -->
+        <main class="tab-content">
+            <!-- コンサル業界タブ -->
+            <section id="consulting" class="tab-pane active" role="tabpanel">
+                <div class="news-grid" id="consulting-news">
+                    <!-- ニュースカードがJSで挿入される -->
+                </div>
+            </section>
+
+            <!-- AIタブ -->
+            <section id="ai" class="tab-pane" role="tabpanel">
+                <div class="news-grid" id="ai-news">
+                    <!-- ニュースカードがJSで挿入される -->
+                </div>
+            </section>
+        </main>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <p>&copy; 2026 Daily News Digest</p>
+        </footer>
+    </div>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
