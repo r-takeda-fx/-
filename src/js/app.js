@@ -179,7 +179,7 @@ function isWithinRange(date) {
  */
 async function fetchNewsForDate(date) {
     const dateString = formatDateToString(date);
-    const jsonPath = `src/data/${dateString}.json`;
+    const jsonPath = `data/${dateString}.json`;
 
     try {
         const response = await fetch(jsonPath);
