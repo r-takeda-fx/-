@@ -127,6 +127,52 @@ a:hover {
 }
 
 /* --------------------------------
+   日付セレクター
+   -------------------------------- */
+.date-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm);
+}
+
+.date-selector__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-selector__btn:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.date-selector__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.date-selector__current {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* --------------------------------
    タブナビゲーション
    -------------------------------- */
 .tabs {

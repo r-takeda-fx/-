@@ -14,6 +14,17 @@
             <p class="header__subtitle">コンサル業界 & AI 最新情報</p>
         </header>
 
+        <!-- 日付セレクター -->
+        <div class="date-selector">
+            <button class="date-selector__btn" id="prev-date" aria-label="前の日">
+                ←
+            </button>
+            <span class="date-selector__current" id="current-date">今日</span>
+            <button class="date-selector__btn" id="next-date" aria-label="次の日" disabled>
+                →
+            </button>
+        </div>
+
         <!-- タブナビゲーション -->
         <nav class="tabs" role="tablist">
             <button class="tabs__button active" data-tab="consulting" role="tab" aria-selected="true">
