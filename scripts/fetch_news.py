@@ -25,14 +25,17 @@ RSS_FEEDS: dict[str, list[dict[str, str]]] = {
     "consulting": [
         {"name": "ITmedia ビジネス", "url": "https://rss.itmedia.co.jp/rss/2.0/bizid.xml"},
         {"name": "東洋経済オンライン", "url": "https://toyokeizai.net/list/feed/rss"},
+        {"name": "Google News (コンサル)", "url": "https://news.google.com/rss/search?q=コンサルティング&hl=ja&gl=JP&ceid=JP:ja"},
     ],
     "ai": [
         {"name": "ITmedia AI+", "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"},
         {"name": "GIGAZINE", "url": "https://gigazine.net/news/rss_2.0/"},
+        {"name": "Google News (AI)", "url": "https://news.google.com/rss/search?q=AI+人工知能+生成AI&hl=ja&gl=JP&ceid=JP:ja"},
     ],
     "poker": [
         {"name": "PokerNews", "url": "https://www.pokernews.com/news.rss"},
         {"name": "Card Player", "url": "https://www.cardplayer.com/poker-news/rss"},
+        {"name": "Google News (ポーカー)", "url": "https://news.google.com/rss/search?q=ポーカー&hl=ja&gl=JP&ceid=JP:ja"},
     ],
 }
 
