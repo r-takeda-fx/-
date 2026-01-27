@@ -30,6 +30,10 @@ RSS_FEEDS: dict[str, list[dict[str, str]]] = {
         {"name": "ITmedia AI+", "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml"},
         {"name": "GIGAZINE", "url": "https://gigazine.net/news/rss_2.0/"},
     ],
+    "poker": [
+        {"name": "PokerNews", "url": "https://www.pokernews.com/news.rss"},
+        {"name": "Card Player", "url": "https://www.cardplayer.com/poker-news/rss"},
+    ],
 }
 
 # 設定
@@ -54,6 +58,7 @@ class NewsData(TypedDict):
     updated_at: str
     consulting: list[Article]
     ai: list[Article]
+    poker: list[Article]
 
 
 def truncate_text(text: str, max_length: int) -> str:
@@ -258,6 +263,7 @@ def main() -> None:
     # 各カテゴリのニュースを取得
     consulting_news = fetch_category_news("consulting", RSS_FEEDS["consulting"])
     ai_news = fetch_category_news("ai", RSS_FEEDS["ai"])
+    poker_news = fetch_category_news("poker", RSS_FEEDS["poker"])
 
     # ニュースデータを構築
     news_data: NewsData = {
@@ -265,6 +271,7 @@ def main() -> None:
         "updated_at": updated_at,
         "consulting": consulting_news,
         "ai": ai_news,
+        "poker": poker_news,
     }
 
     # JSONファイルに保存
@@ -282,7 +289,8 @@ def main() -> None:
     print("=" * 60)
     print(f"  コンサル業界: {len(consulting_news)}件")
     print(f"  AI: {len(ai_news)}件")
-    print(f"  合計: {len(consulting_news) + len(ai_news)}件")
+    print(f"  ポーカー: {len(poker_news)}件")
+    print(f"  合計: {len(consulting_news) + len(ai_news) + len(poker_news)}件")
     print("=" * 60)
 
 

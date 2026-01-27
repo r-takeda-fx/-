@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily News Digest - コンサル & AI</title>
+    <title>Daily News Digest - コンサル & AI & ポーカー</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <!-- ヘッダー -->
         <header class="header">
             <h1 class="header__title">Daily News Digest</h1>
-            <p class="header__subtitle">コンサル業界 & AI 最新情報</p>
+            <p class="header__subtitle">コンサル業界 & AI & ポーカー 最新情報</p>
         </header>
 
         <!-- 日付セレクター -->
@@ -33,6 +33,9 @@
             <button class="tabs__button" data-tab="ai" role="tab" aria-selected="false">
                 AI
             </button>
+            <button class="tabs__button" data-tab="poker" role="tab" aria-selected="false">
+                ポーカー
+            </button>
         </nav>
 
         <!-- タブコンテンツ -->
@@ -47,6 +50,13 @@
             <!-- AIタブ -->
             <section id="ai" class="tab-pane" role="tabpanel">
                 <div class="news-grid" id="ai-news">
+                    <!-- ニュースカードがJSで挿入される -->
+                </div>
+            </section>
+
+            <!-- ポーカータブ -->
+            <section id="poker" class="tab-pane" role="tabpanel">
+                <div class="news-grid" id="poker-news">
                     <!-- ニュースカードがJSで挿入される -->
                 </div>
             </section>

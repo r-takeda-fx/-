@@ -93,6 +93,43 @@ const fallbackNews = {
             summary: "政府は「AI戦略2026」を閣議決定。国産大規模言語モデルの開発に1,000億円を投資し、産学官連携による国際競争力強化を目指す。",
             url: "https://example.com/japan-ai-strategy"
         }
+    ],
+    poker: [
+        {
+            title: "WSOP 2026 メインイベント開幕 - 過去最大の参加者数を記録",
+            source: "PokerNews",
+            date: "2026-01-27",
+            summary: "ワールドシリーズオブポーカー2026のメインイベントが開幕。過去最大となる1万人以上の参加者が世界チャンピオンの座を目指す。",
+            url: "https://example.com/wsop-2026"
+        },
+        {
+            title: "Phil Ivey、新たなポーカートーナメントシリーズを立ち上げ",
+            source: "Card Player",
+            date: "2026-01-26",
+            summary: "ポーカーレジェンドのPhil Iveyが、アジア市場向けの新しいハイステークストーナメントシリーズの開催を発表。",
+            url: "https://example.com/ivey-series"
+        },
+        {
+            title: "オンラインポーカー市場、2026年は過去最高の成長率",
+            source: "PokerNews",
+            date: "2026-01-25",
+            summary: "世界のオンラインポーカー市場が2025年に20%成長。特にアジア太平洋地域での成長が顕著で、新規プレイヤーが急増。",
+            url: "https://example.com/online-poker-growth"
+        },
+        {
+            title: "GTO戦略の進化 - AI搭載ポーカーソルバーが変える戦術",
+            source: "Card Player",
+            date: "2026-01-24",
+            summary: "最新のAI搭載ポーカーソルバーがGTO戦略の理解を革新。プロプレイヤーのトレーニング方法が大きく変化している。",
+            url: "https://example.com/gto-ai"
+        },
+        {
+            title: "日本のポーカー人口が100万人突破 - カジノ法案の影響",
+            source: "PokerNews",
+            date: "2026-01-23",
+            summary: "日本国内のポーカー人口が初めて100万人を突破。IR法案の進展とともにポーカーへの関心が高まっている。",
+            url: "https://example.com/japan-poker"
+        }
     ]
 };
 
@@ -231,6 +268,7 @@ function updateDateSelector() {
 function updateNewsDisplay(newsData) {
     renderNews('consulting-news', newsData.consulting || []);
     renderNews('ai-news', newsData.ai || []);
+    renderNews('poker-news', newsData.poker || []);
 }
 
 // ========================================
