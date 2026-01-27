@@ -1,7 +1,14 @@
 {
   "date": "2026-01-27",
-  "updated_at": "2026-01-27T16:22:25.314006+09:00",
+  "updated_at": "2026-01-27T16:32:48.209779+09:00",
   "consulting": [
+    {
+      "title": "ナイトスクープ炎上｢保護を｣が現実的でないワケ | インターネット | 東洋経済オンライン",
+      "source": "東洋経済オンライン",
+      "date": "2026-01-27",
+      "summary": "2026年1月23日放送の「探偵！ナイトスクープ」で放送された内容が、SNSを中心に物議を醸している。「探偵…",
+      "url": "https://toyokeizai.net/articles/-/932143?utm_source=rss&utm_medium=http&utm_campaign=link_back"
+    },
     {
       "title": "退職を迷う→｢ネガティブ吐き出しノート｣が有効 | リーダーシップ・教養・資格・スキル | 東洋経済オンライン",
       "source": "東洋経済オンライン",
@@ -64,13 +71,6 @@
       "date": "2026-01-27",
       "summary": "「わたしのせいで雨が降ったとか、試合に負けたとか、あなたにそんな悪いことを起こすほどの力があると思…",
       "url": "https://toyokeizai.net/articles/-/924889?utm_source=rss&utm_medium=http&utm_campaign=link_back"
-    },
-    {
-      "title": "子どもの偏食を｢わがまま｣と考えてはいけない訳 | 子育て | 東洋経済オンライン",
-      "source": "東洋経済オンライン",
-      "date": "2026-01-27",
-      "summary": "子どもの「食べない」「好き嫌いが激しい」という悩みは、多くの親が一度はぶつかるテーマです。しかし近…",
-      "url": "https://toyokeizai.net/articles/-/931244?utm_source=rss&utm_medium=http&utm_campaign=link_back"
     }
   ],
   "ai": [
@@ -144,5 +144,6 @@
       "summary": "OpenAIは健康とウェルネスのために設計されたChatGPTの専用機能「ChatGPT ヘルスケア」を2026年1月7日に発表しました。ユーザーが安全かつパーソナライズされた環境で健康に関する質問を行えるよう設計されているとのことですが、健康関連の相談は非常にプライバシーに関わるものであり、...",
       "url": "https://gigazine.net/news/20260127-chatgpt-health-privacy/"
     }
-  ]
+  ],
+  "poker": []
 }
